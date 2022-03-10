@@ -1,4 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+p{
+    font-size: 1.6rem;
+}
+h1{
+    font-size: 6rem;
+
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+.home::before{
+    content: '';
+    background: url('../img/sunset.jpeg');
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+}
 /* 
 
     You can write your own styles here...
