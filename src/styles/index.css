@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    
+    
 }
 
 p{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 h1{
     font-size: 6rem;
@@ -21,10 +21,13 @@ h1{
     position: relative;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 200;
 }
-.home::before{
+.home:before{
     content: '';
-    background: url('../img/sunset.jpeg');
+    background: url('https://wallpaperaccess.com/full/1167985.jpg') no-repeat center center/cover;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
@@ -32,7 +35,55 @@ h1{
     z-index: -1;
     
 }
-/* 
+.home .search{
+    text-align:center;
+    padding: 1rem;
+}
+.home input{
+    padding: .7rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background:  rgba(78, 71, 71, 0.1);
+}
+::placeholder{
+    color: white;
+}
+.thecontainer{
+    max-width: 700px;
+    height: 700px;
+    margin: auto;
+    padding: 0.4rem;
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.home .top{
+    width: 100%;
+    margin: 1rem auto;
+}
+.home .description{
+    position: relative;
+    right: -65%;
+    transform-origin: 0 0;
+
+}
+.home .bottom{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 12px;
+    background-color: rgba(192, 192, 192, 0.2);
+}
+.bold{
+    font-weight: 700;
+}
+
+    /* 
 
     You can write your own styles here...
     
